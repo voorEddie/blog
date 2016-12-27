@@ -1,8 +1,8 @@
 {
-  "name": "voorEddie.github.io",
+  "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vooreddie.github.io/blog",
+  "homepage": "https://voorEddie.github.io/blog",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-scripts": "0.8.4"
