@@ -1,0 +1,5 @@
+.App {
+  font-family: Verdana, Geneva, sans-serif;
+  display: flex;
+  flex-direction: column;
+}

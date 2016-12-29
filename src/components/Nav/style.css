@@ -1,0 +1,16 @@
+.Nav {
+  order: -1;
+  border: crimson 1px dotted;
+}
+
+.Nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+}
+
+.Nav-list-item {
+  margin-right: 30px;
+}
