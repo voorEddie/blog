@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, Redirect, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router'
 import 'normalize.css'
 import App from './components/App'
 import ListView from './components/ListView'
@@ -11,10 +11,10 @@ const About = () => (
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route component={App}>
-      <Route path="/" component={ListView} />
-      <Route path="/about" component={About} />
-      <Redirect from='*' to='/' />
+    <Route path="/blog" component={App}>
+      <IndexRoute component={ListView} />
+      <Route path="about" component={About} />
+      <Redirect from='*' to='/blog' />
     </Route>
   </Router>,
   document.getElementById('root')
