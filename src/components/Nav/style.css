@@ -1,16 +1,22 @@
 .Nav {
   order: -1;
-  border: crimson 1px dotted;
 }
 
 .Nav-list {
   display: flex;
   margin: 0;
   padding: 0;
+  background-color: #222;
   list-style: none;
   user-select: none;
 }
 
 .Nav-list-item {
+  color: green;
   margin-right: 30px;
+}
+
+.Nav-list-item a {
+  color: #54ED66;
+  text-decoration: none;
 }

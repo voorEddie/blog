@@ -1,14 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router'
+import list from '../../articles/list'
 import './style.css'
 
 const ListView = () => (
   <div className="ListView">
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-      <li>item 4</li>
-    </ul>
+    {list.map(item => (
+      <section key={item.id}>
+        <header>
+          <h1>{item.title}</h1>
+          <time dateTime={item.timestamp}>{item.timestamp}</time>
+        </header>
+        <p>{item.preview}</p>
+        <Link to={item.link}>Full article</Link>
+      </section>))}
   </div>
 )
 
