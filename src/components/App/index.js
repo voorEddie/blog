@@ -6,8 +6,10 @@ import Nav from '../Nav'
 const App = (props) => (
   <div className="App">
     <Header />
-    {props.children}
     <Nav />
+    <main className="Main">
+      <div className="Main-inner">{props.children}</div>
+    </main>
   </div>
 )
 

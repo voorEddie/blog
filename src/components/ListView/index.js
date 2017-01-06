@@ -6,13 +6,13 @@ import './style.css'
 const ListView = () => (
   <div className="ListView">
     {list.map(item => (
-      <section key={item.id}>
+      <section className="ListView-post" key={item.id}>
         <header>
           <h1>{item.title}</h1>
-          <time dateTime={item.timestamp}>{item.timestamp}</time>
+          <time dateTime={item.timestamp}>Posted on: {item.timestamp}</time>
         </header>
         <p>{item.preview}</p>
-        <Link to={item.link}>Full article</Link>
+        <Link className="btn-readMore" to={item.link}>Read more</Link>
       </section>))}
   </div>
 )

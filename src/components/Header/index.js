@@ -3,8 +3,10 @@ import './style.css'
 
 const Header = () => (
   <header className="Header">
-    <h1>Blog</h1>
-    <h2>A frontender{'\''}s blog</h2>
+    <div className="Header-inner">
+      <h1 className="Header-title">Lorem Ipsum</h1>
+      <h2 className="Header-subTitle">Nulla dolor orci</h2>
+    </div>
   </header>
 )
 

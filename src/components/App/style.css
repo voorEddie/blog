@@ -1,7 +1,28 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #EDEDED;
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+}
+
+.Main-inner {
+  flex-grow: 1;
+  max-width: 1024px;
+  padding: 0 10px;
 }
 
 .DetailView {

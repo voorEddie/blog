@@ -1,2 +1,55 @@
 .ListView {
 }
+
+.ListView-post {
+  background-color: #FFF;
+  margin: 50px 0;
+  padding: 20px;
+  position: relative;
+}
+
+.ListView-post:before,
+.ListView-post:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: #CCC 4px solid;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ListView-post:before {
+  top: -4px;
+  left: -4px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ListView-post:after {
+  right: -4px;
+  bottom: -4px;
+  border-top: none;
+  border-left: none;
+}
+
+.ListView-post h1 {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+
+.ListView-post time {
+  color: #A8A8A8;
+}
+
+.btn-readMore {
+  display: block;
+  text-decoration: none;
+  margin: 50px 0 0 0;
+  padding: 10px;
+  color: #80C26A;
+  border: #80C26A 1px solid;
+  text-align: center;
+}

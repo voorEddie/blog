@@ -1,22 +1,42 @@
 .Nav {
-  order: -1;
+  display: flex;
+  justify-content: center;
+  background-color: #555;
 }
 
 .Nav-list {
+  max-width: 1024px;
+  flex-grow: 1;
   display: flex;
+  justify-content: flex-start;
   margin: 0;
-  padding: 0;
-  background-color: #222;
+  padding: 0 10px;
   list-style: none;
   user-select: none;
 }
 
 .Nav-list-item {
-  color: green;
-  margin-right: 30px;
+
 }
 
 .Nav-list-item a {
-  color: #54ED66;
+  display: block;
+  color: #FFF;
   text-decoration: none;
+  font-size: 17px;
+  line-height: 1;
+  padding: 20px 50px;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+.Nav-list-item a.active,
+.Nav-list-item a:hover,
+.Nav-list-item a:focus {
+  background-color: #000;
+  color: #FFF;
+  outline: 0;
+}
+
+.Nav-list-item a.active {
+  color: #80C26A;
 }

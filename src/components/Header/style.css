@@ -1,7 +1,16 @@
 .Header {
-  order: -2;
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #80C26A;
+}
+
+.Header-inner {
+  flex-grow: 1;
+  max-width: 1024px;
+  padding: 0 10px;
+}
+
+.Header-title,
+.Header-subTitle {
+  color: #FFF;
 }
